@@ -1,8 +1,1 @@
-{
-  "name": "naija-campus-server",
-  "version": "0.3.0",
-  "description": "Minimal real-time multiplayer backend for Naija Campus prototype",
-  "main": "server.js",
-  "scripts": {"start": "node server.js"},
-  "dependencies": {"ws": "^8.18.0"}
-}
+{"name":"naija-campus","version":"0.4.0","private":true,"description":"Mobile-first multiplayer campus prototype","scripts":{"start":"node server.js"},"dependencies":{"ws":"^8.18.0"}}
