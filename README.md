@@ -1,19 +1,19 @@
-# Naija Campus v0.4 — Connected Multiplayer Campus
+# Naija Campus v0.5 — Living Campus
 
-Mobile-first prototype with a campus map, player profiles, live player movement, online list, and shared chat using WebSockets.
+Mobile-first multiplayer campus prototype for Nigerian students.
 
-## Update your existing GitHub repository (phone-friendly)
-1. Download and extract this ZIP.
-2. Open the extracted `naija_campus_v04` folder.
-3. Upload these **three files to the root of your existing `naija-campus` GitHub repo**: `index.html`, `server.js`, and `package.json`. Replace the existing files of the same names. Do **not** upload the ZIP itself.
-4. Commit directly to `main`.
-5. Render should auto-deploy. If not, Render → your service → Manual Deploy → Deploy latest commit.
-6. Open `https://naija-campus.onrender.com`.
+## v0.5 upgrades
+- Student avatar selection (six student looks) synced to other connected players.
+- Avatar-style player rendering on the shared campus map.
+- Temporary speech bubbles above players when they send campus chat messages.
+- Tap campus buildings to see their activity descriptions.
+- Retains v0.4 WebSocket multiplayer, shared chat, online roster and movement.
 
-Render settings: Build Command `npm install`; Start Command `npm start`; Node runtime. The root directory should be blank/default.
+## Update existing GitHub repository
+Upload these five files to the root of your existing `naija-campus` repository, replacing files with the same names: `index.html`, `server.js`, `package.json`, `render.yaml`, `README.md`. Commit to `main`. Render should auto-deploy from the connected GitHub repository. If it does not, open the existing Render service and choose Manual Deploy → Deploy latest commit.
 
-## Multiplayer test
-Open the site on two phones or browsers. Enter a nickname and university on each. They should appear in the student list and on the campus map. Move with WASD/arrows or mobile directional pad. Send a chat message and check it arrives on the other device.
+## Test
+Open the deployed URL in two separate browsers/devices. Join with different nicknames and avatar choices. Confirm both players appear, move, see each other's avatar, and see chat speech bubbles. Tap the buildings to test location cards.
 
 ## Limitations
-Prototype only: no accounts, moderation/report tools, persistent chat, voice, or save-state. One shared campus room. Player state is memory-only and resets on server restart. Avoid sharing sensitive personal details in chat.
+This remains a prototype. Building taps show informational prompts; they do not yet load separate interiors. No accounts, persistence, friend system, moderation/report system, voice chat, or mini-games are implemented.
