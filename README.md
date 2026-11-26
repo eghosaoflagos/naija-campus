@@ -1,19 +1,14 @@
-# Naija Campus v0.5 — Living Campus
+# Naija Campus v0.6 — Campus Trivia
 
-Mobile-first multiplayer campus prototype for Nigerian students.
+This update adds a playable five-question Campus Trivia activity and a Campus Coins counter. Correct answers award 10 coins. Coins are saved locally in the player's browser/device (not shared between devices or accounts). Multiplayer campus movement and chat remain from v0.5.
 
-## v0.5 upgrades
-- Student avatar selection (six student looks) synced to other connected players.
-- Avatar-style player rendering on the shared campus map.
-- Temporary speech bubbles above players when they send campus chat messages.
-- Tap campus buildings to see their activity descriptions.
-- Retains v0.4 WebSocket multiplayer, shared chat, online roster and movement.
-
-## Update existing GitHub repository
-Upload these five files to the root of your existing `naija-campus` repository, replacing files with the same names: `index.html`, `server.js`, `package.json`, `render.yaml`, `README.md`. Commit to `main`. Render should auto-deploy from the connected GitHub repository. If it does not, open the existing Render service and choose Manual Deploy → Deploy latest commit.
-
-## Test
-Open the deployed URL in two separate browsers/devices. Join with different nicknames and avatar choices. Confirm both players appear, move, see each other's avatar, and see chat speech bubbles. Tap the buildings to test location cards.
+## Upload to GitHub (mobile-friendly)
+1. Extract this ZIP.
+2. Open your `naija-campus` GitHub repository.
+3. Use the repository menu → Upload files.
+4. Upload the five files at the ZIP root (`index.html`, `server.js`, `package.json`, `render.yaml`, `README.md`) and replace same-named files. Do not upload the ZIP itself.
+5. Commit directly to `main`.
+6. Wait for Render to deploy, then open your site and tap **Start Campus Trivia** or the **Sports Hub**.
 
 ## Limitations
-This remains a prototype. Building taps show informational prompts; they do not yet load separate interiors. No accounts, persistence, friend system, moderation/report system, voice chat, or mini-games are implemented.
+Trivia is a local prototype feature. Coin balance is stored on the device, not in the server database. This version has no accounts, coin syncing, anti-cheat, or global leaderboard yet.
